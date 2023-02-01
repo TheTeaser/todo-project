@@ -1,4 +1,4 @@
 # todo-project
-![home wireframe](/Home.PNG)
+![home wireframe](/assets/Home.PNG)
 
-![About wireframe](/about.PNG)
+![About wireframe](/assets/about.PNG)
