@@ -1,59 +1,59 @@
 <!DOCTYPE html>
-<html lang="en"> 
-  <head>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>ToDo List Home</title> 
-  </head>
-  <section id="logo" class="firstSection">
-    <h1>ToDo Lister</h1>
-    
-    <link rel="stylesheet" href="./style.css">
-    
-</section>
-
-  <body> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo App</title>
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
     <header>
-        <div><img src="./assets/LOGO.png" alt="logo"></div>
-    <nav>
-        <ul>
+        
+        <img src="./assets/LOGO.png" alt="logo">
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+            </ul>
+        </nav>
 
-            <li> <a href="./about.html"> About Me</a></li>
-            <li> <a href="./"> Home </a></li>
-            
-        </ul>
-    </nav>      
     </header>
+
+    <main>
+        
+        <h1>ToDo App</h1>
+
+        <div>
+            <table>
+            
+            <tr>
+                <th>Tasks</th>
+                <th>Status</th>
+            </tr>
+            <tr>
+                <td>Go for a walk</td>
+                <td><label class="CHK1">Done  <input type="checkbox"> </label></td>
+            </tr>
+            <tr>
+                <td>Start Coding</td>
+                <td><label class="CHK2">Done  <input type="checkbox"> </label></td>
+            </tr>
+            <tr>
+                <td>Catch some sleep</td>
+                <td><label class="CHK3">Done  <input type="checkbox"> </label></td>
+            </tr>
     
-    <main><h1>ToDo Lister</h1>
-    <div><table border="1">
-        <tr>
-            <th>Tasks</th>
-            <th>Status</th>
-        </tr>
-        <tr>
-            <td>Go for a walk</td>
-            <td><label class="CHK1">Done<input type="checkbox"> </label></td>
-        </tr>
-        <tr>
-            <td>Start Coding</td>
-            <td><label class="CHK2">Done<input type="checkbox"> </label></td>
-        </tr>
-        <tr>
-            <td>Catch some sleep</td>
-            <td><label class="CHK3">Done<input type="checkbox"> </label></td>
-        </tr>
+    
+        
+            </table>
+        </div>
+    </main>
 
+    <footer>
 
-    </table>
-    </div>
-</main>
+        <div><p>&copy; All rights reserved to TheTeaser &trade;</p></div>
 
-
-<br><br><br><br><br><br>
-
-    <footer><section><p>&copy; All rights reserved to TheTeaser &trade;</p></section></footer>
- 
+    </footer>
 </body>
-
 </html>
