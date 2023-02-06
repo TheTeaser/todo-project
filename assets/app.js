@@ -11,13 +11,14 @@ if (inputWelcome==false){
     var inputAge= prompt("Kindly enter your age: ");
 
     if (inputAge<=0){ var inputAlert= alert("You have provided a wrong age (Less or equal to ZERO)");}
+    
+    var gender= inputGender.toLowerCase();
+    
+    switch (gender){
 
-    switch (inputGender){
-        case "Male":
         case "male": alert("Welcome Mr. "+inputName);
     break;
 
-        case "Female":
         case "female": alert("Welcome Ms. "+inputName);
     break;
 
