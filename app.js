@@ -27,21 +27,37 @@ if (inputWelcome == false) {
     }
 }
 var surveyArr = [];
+var inputRate = ratePage();
+var inputVisit = visitPage();
+var inputStyle = stylePage();
 
-var inputRate = prompt("Do you like this expirence? (Yes/No)");
-var rate = inputRate.toLowerCase();
-if (rate == "") { rate = "invalid"; }
-surveyArr.push(rate);
 
-var inputVisit = prompt("Would you visit this page again? (Yes/No)");
-var visit = inputVisit.toLowerCase();
-if (visit == "") { visit = "invalid"; }
-surveyArr.push(visit);
+function ratePage() {
+    inputRate = prompt("Do you like this expirence? (Yes/No)");
+    var rate = inputRate.toLowerCase();
+    return rate
+}
+if (inputRate == "") { inputRate = "invalid"; }
+surveyArr.push(inputRate);
 
-var inputStyle = prompt("Do you like the styling of the webpage? (Yes/No)");
-var style = inputStyle.toLowerCase();
-if (style == "") { style = "invalid"; }
-surveyArr.push(style);
+function visitPage() {
+    inputVisit = prompt("Would you visit this page again? (Yes/No)");
+    var visit = inputVisit.toLowerCase();
+    return visit
+}
+
+if (inputVisit == "") { inputVisit = "invalid"; }
+surveyArr.push(inputVisit);
+
+
+function stylePage() {
+    inputStyle = prompt("Do you like the styling of the webpage? (Yes/No)");
+    var style = inputStyle.toLowerCase();
+    return style
+}
+if (inputStyle == "") { style = "invalid"; }
+surveyArr.push(inputStyle);
+
 
 for (let i = 0; i < surveyArr.length; i++) {
     console.log(surveyArr[i]);
