@@ -55,7 +55,7 @@ function stylePage() {
     var style = inputStyle.toLowerCase();
     return style
 }
-if (inputStyle == "") { style = "invalid"; }
+if (inputStyle == "") { inputStyle = "invalid"; }
 surveyArr.push(inputStyle);
 
 
